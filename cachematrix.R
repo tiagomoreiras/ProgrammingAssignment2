@@ -5,7 +5,7 @@
 ## some benefit to caching the inverse of a matrix rather than computing 
 ## it repeatedly.
 
-## Creates a catched matrix object that can cache its inverse
+## Creates a cached matrix object that can cache its inverse
 ##
 ## Arguments
 ## x    input matrix that will cache its inverse
@@ -15,7 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
     
     ## Sets a new source matrix, clearing the inverse
     set <- function(y) {
-        # Sets a new valur for x
+        # Sets a new value for x
         x <<- y
         # Clears the cached inverse
         i <<- NULL
